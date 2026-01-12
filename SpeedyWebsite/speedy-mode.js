@@ -112,16 +112,16 @@ html{scroll-behavior:auto !important;}
 		label.textContent = `Smooth Mode: ${currentMode === "aggressive" ? "Aggressive" : "Gentle"}`;
 		label.style.cssText = "font-weight:600;";
 
-        const switchBtn = document.createElement("button");
-        switchBtn.textContent = "Switch";
-        switchBtn.style.cssText =
-            "padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.2);background:#fff;cursor:pointer;";
+		const switchBtn = document.createElement("button");
+		switchBtn.textContent = "Switch";
+		switchBtn.style.cssText =
+			"padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.2);background:#fff;color:#111;cursor:pointer;";
         switchBtn.onclick = () => toggleMode();
 
-        const offBtn = document.createElement("button");
-        offBtn.textContent = "Off";
-        offBtn.style.cssText =
-            "padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.2);background:#fff;cursor:pointer;";
+		const offBtn = document.createElement("button");
+		offBtn.textContent = "Off";
+		offBtn.style.cssText =
+			"padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.2);background:#fff;color:#111;cursor:pointer;";
         offBtn.onclick = () => removeAll();
 
         d.appendChild(label);
