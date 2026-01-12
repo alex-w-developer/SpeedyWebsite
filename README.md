@@ -5,7 +5,6 @@ SpeedyWebsite is a lightweight bookmarklet that reduces heavy animations and vis
 ## Features
 - Gentle and Aggressive smoothing modes
 - Per-site mode memory (saved per domain)
-- Keyboard toggle: **Ctrl + Shift + M**
 - On-page control UI
 - One-click enable / disable
 - No installation, no permissions, no tracking
@@ -27,7 +26,6 @@ All settings are stored locally in your browser using `localStorage`.
 
 ## Usage
 - Click **Switch** in the floating UI to change modes
-- Press **Ctrl + Shift + M** to toggle modes from the keyboard
 - Mode preference is remembered per website
 - Click **Off** to remove all injected styles and shortcuts
 
