@@ -84,12 +84,12 @@ html{scroll-behavior:auto !important;}
 
             if (typing) return;
 
-            const match = 
-                e.ctrlKey === !!HOTKEY.ctrlKey &&
-                e.shiftKey === !!HOTKEY.shiftKey &&
-                e.altKey === !!HOTKEY.altKey &&
-                e.metaKey === !!HOTKEY.metaKey &&
-                e.code === HOTKEY.code;
+            const match =
+            (!HOTKEY.ctrlKey  || e.ctrlKey) &&
+            (!HOTKEY.shiftKey || e.shiftKey) &&
+            (!HOTKEY.altKey   || e.altKey) &&
+            (!HOTKEY.metaKey || e.metaKey) &&
+            e.code === HOTKEY.code;
 
             if (!match) return;
 
